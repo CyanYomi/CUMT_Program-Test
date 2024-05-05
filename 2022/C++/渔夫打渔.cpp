@@ -47,16 +47,16 @@ int interval(date a,date b)
 	else
 		return e+s-365;
 }
-//ÕâÌâC++ÕæµÄÊÇ±»python°´ÔÚµØÉÏ²È 
+//è¿™å°±æ˜¯C++è¿œä¸å¦‚pythonçš„åœ°æ–¹ 
 int main()
 {
 	date st,ed;
 	cin>>st.yy>>st.mm>>st.dd;
 	cin>>ed.yy>>ed.mm>>ed.dd;
 	int intv=interval(st,ed);
-	printf("¾­¹ı%dÌì",intv);
+	printf("å…±%då¤©",intv);
 	int wd=(intv/5)*3;
 	wd+=intv%5<3?intv%5:3;
-	printf("´òÓæ%dÌì£¬ÃşÓã%dÌì",wd,intv-wd);	
+	printf("æ‰“é±¼%då¤©ï¼Œæ‘¸é±¼%då¤©",wd,intv-wd);	
 	return 0;
 }
